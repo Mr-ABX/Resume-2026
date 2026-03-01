@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulrahman Toor | Technical PM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #030408;
+            color: #cbd5e1;
+            overflow-x: hidden;
+            line-height: 1.6; 
+        }
+
+        .glass-card {
+            background: rgba(15, 23, 42, 0.3);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-badge {
+            background: rgba(30, 41, 59, 0.5);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            color: #60a5fa;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.5rem 1.2rem;
+            border-radius: 9999px;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .skill-tag {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 0.75rem;
+            font-size: 0.85rem; 
+            font-weight: 500;
+            color: #e2e8f0;
+        }
+
+        .value-card {
+            background: rgba(15, 23, 42, 0.4);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            padding: 1.75rem;
+            border-radius: 1.5rem;
+            height: 100%;
+        }
+
+        .sidebar-section-title {
+            font-size: 0.7rem; 
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            color: #64748b;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .copy-toast {
+            position: fixed;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #10b981;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 1rem;
+            font-weight: 600;
+            display: none;
+            z-index: 1000;
+        }
+
+        .social-link {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 0.6rem;
+            border-radius: 0.85rem;
+            color: #94a3b8;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-link:hover {
+            background: rgba(59, 130, 246, 0.1);
+            border-color: rgba(59, 130, 246, 0.4);
+            color: #60a5fa;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div id="toast" class="copy-toast">Contact Info Copied!</div>
+
+    <div class="max-w-6xl mx-auto space-y-8">
+        
+        <!-- HEADER: Brand/Bio -->
+        <header class="relative glass-card rounded-[2rem] p-8 md:p-12 overflow-hidden">
+            <div class="absolute top-0 right-0 p-8 opacity-[0.03] pointer-events-none">
+                <i data-lucide="layers" style="width: 250px; height: 250px;"></i>
+            </div>
+
+            <div class="relative z-10 max-w-4xl">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6">
+                    <div class="header-badge">
+                        <i data-lucide="shield-check" class="w-3.5 h-3.5"></i>
+                        EXECUTIVE LEAD // TECHNICAL CREATIVE DIRECTOR
+                    </div>
+                    
+                    <div class="flex items-center gap-2.5">
+                        <a href="https://www.linkedin.com/in/abdulrahman-t/" target="_blank" class="social-link" title="LinkedIn">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://github.com/Mr-ABX" target="_blank" class="social-link" title="GitHub">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/abdulrahman.toor/" target="_blank" class="social-link" title="Instagram">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-white mb-6">
+                    Abdulrahman <span class="gradient-text">Toor</span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-slate-300 font-medium leading-relaxed mb-8 max-w-3xl">
+                    A <span class="text-white font-bold">Technical Project Manager</span> with deep roots in UI/UX and Full-Stack Creative Production. Expert in leading teams to deliver high-fidelity <span class="text-blue-400 italic">Web, Video, and Design</span> systems.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-6 md:gap-10">
+                    <div class="flex items-center gap-2.5 text-slate-300 cursor-pointer hover:text-white transition-colors" onclick="copyText('abdulrahmant.official@gmail.com')">
+                        <i data-lucide="mail" class="w-5 h-5 text-blue-400"></i>
+                        <span class="text-base font-semibold">abdulrahmant.official@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 text-slate-300">
+                        <i data-lucide="phone" class="w-5 h-5 text-blue-400"></i>
+                        <span class="text-base font-semibold">0309-4506904</span>
+                    </div>
+                    <a href="https://abdulrahmant.com" target="_blank" class="flex items-center gap-2.5 text-slate-300 hover:text-white transition-colors">
+                        <i data-lucide="globe" class="w-5 h-5 text-blue-400"></i>
+                        <span class="text-base font-semibold">abdulrahmant.com</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            
+            <!-- LEFT SIDEBAR -->
+            <aside class="lg:col-span-4 space-y-6">
+                
+                <!-- Tech Stack -->
+                <div class="glass-card rounded-[2rem] p-6 space-y-8">
+                    <h3 class="sidebar-section-title">
+                        <i data-lucide="code-2" class="w-3.5 h-3.5 text-blue-400"></i> TECHNICAL TECH STACK
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-2 text-white font-bold text-sm">
+                                <i data-lucide="layout" class="w-4 h-4 text-blue-400"></i> Creative & UI/UX
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Figma / Adobe Suite</span>
+                                <span class="skill-tag">UI/UX Design</span>
+                                <span class="skill-tag">Video & Motion</span>
+                                <span class="skill-tag text-blue-300 border-blue-500/20">Brand Identity</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 pt-4 border-t border-white/5">
+                            <div class="flex items-center gap-2 text-white font-bold text-sm">
+                                <i data-lucide="terminal" class="w-4 h-4 text-emerald-400"></i> AI & Web Tech
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag text-emerald-400 border-emerald-500/20">WordPress Wizard</span>
+                                <span class="skill-tag">Elementor / Divi</span>
+                                <span class="skill-tag">n8n / Automation</span>
+                                <span class="skill-tag">GenAI / LLMs</span>
+                                <span class="skill-tag text-emerald-400 border-emerald-500/20">Prompt Eng.</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 pt-4 border-t border-white/5">
+                            <div class="flex items-center gap-2 text-white font-bold text-sm">
+                                <i data-lucide="trending-up" class="w-4 h-4 text-pink-400"></i> Marketing & SEO
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag text-pink-300 border-pink-500/20">Technical SEO</span>
+                                <span class="skill-tag">On-Page/Off-Page</span>
+                                <span class="skill-tag">Digital Marketing</span>
+                                <span class="skill-tag text-pink-300 border-pink-500/20">Google Analytics</span>
+                            </div>
+                        </div>
+
+                        <div class="space-y-3 pt-4 border-t border-white/5">
+                            <div class="flex items-center gap-2 text-white font-bold text-sm">
+                                <i data-lucide="briefcase" class="w-4 h-4 text-orange-400"></i> Management
+                            </div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Agile / Scrum</span>
+                                <span class="skill-tag text-orange-300 border-orange-500/20">Team Leadership</span>
+                                <span class="skill-tag">Resource Planning</span>
+                                <span class="skill-tag">Biz-Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Training & Mentorship -->
+                <div class="glass-card rounded-[2rem] p-6 space-y-6">
+                    <h3 class="sidebar-section-title">
+                        <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-purple-400"></i> TRAINING & MENTORSHIP
+                    </h3>
+                    
+                    <div class="space-y-6">
+                        <div class="relative pl-5 border-l border-purple-500/40">
+                            <div class="flex justify-between items-start mb-0.5">
+                                <p class="text-lg font-bold text-white">MSN GLOBAL</p>
+                                <span class="text-[9px] font-bold text-slate-500 tracking-tighter bg-white/5 px-2 py-0.5 rounded">LATE 2025</span>
+                            </div>
+                            <p class="text-sm font-bold text-purple-400 mb-2">AI Implementation Lead / Trainer</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">Led a 2-month workshop for <span class="text-white">In-house & Remote teams</span>. Developed modules for AI prompt engineering.</p>
+                        </div>
+
+                        <div class="relative pl-5 border-l border-blue-500/40">
+                            <div class="flex justify-between items-start mb-0.5">
+                                <p class="text-lg font-bold text-white">NIFTY WINGS</p>
+                                <span class="text-[9px] font-bold text-slate-500 tracking-tighter bg-white/5 px-2 py-0.5 rounded">EARLY 2025</span>
+                            </div>
+                            <p class="text-sm font-bold text-blue-400 mb-2">Creative Design Instructor</p>
+                            <p class="text-sm text-slate-400 leading-relaxed">Conducted a 1-month intensive program for their <span class="text-white">In-house team</span>. Mentored designers on high-fidelity graphics.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- RIGHT MAIN -->
+            <main class="lg:col-span-8 space-y-8">
+                
+                <!-- 1. PROFESSIONAL TRAJECTORY -->
+                <section class="glass-card rounded-[2rem] p-8 md:p-10 space-y-10">
+                    <h3 class="sidebar-section-title">
+                        <i data-lucide="milestone" class="w-3.5 h-3.5 text-blue-400"></i> CAREER TRAJECTORY
+                    </h3>
+                    
+                    <div class="space-y-10">
+                        <!-- Role 1 -->
+                        <div class="relative pl-10 border-l border-blue-500/30">
+                            <div class="absolute -left-[6px] top-0 w-3 h-3 rounded-full bg-blue-500 ring-4 ring-blue-500/20 shadow-[0_0_15px_rgba(59,130,246,0.6)]"></div>
+                            <div class="flex flex-col md:flex-row justify-between mb-3">
+                                <h4 class="text-xl font-black text-white">Executive Lead</h4>
+                                <span class="text-[10px] font-bold text-slate-400 tracking-widest bg-white/5 px-3 py-1 rounded-full border border-white/10 h-fit mt-1.5 md:mt-0 uppercase">2025</span>
+                            </div>
+                            <p class="text-blue-400 font-bold text-base mb-3">INFNI-T AI Agency</p>
+                            <p class="text-slate-300 text-base leading-relaxed">
+                                Orchestrating the lifecycle of <span class="text-white font-medium">Web, Video, and Graphic Design</span> projects, managing cross-functional creative teams. Leading UI/UX Strategy and Technical SEO implementation.
+                            </p>
+                        </div>
+
+                        <!-- Role 2 -->
+                        <div class="relative pl-10 border-l border-emerald-500/30">
+                            <div class="absolute -left-[6px] top-0 w-3 h-3 rounded-full bg-emerald-500 ring-4 ring-emerald-500/20"></div>
+                            <div class="flex flex-col md:flex-row justify-between mb-3">
+                                <h4 class="text-xl font-black text-white">Head of Creatives</h4>
+                                <span class="text-[10px] font-bold text-slate-400 tracking-widest bg-white/5 px-3 py-1 rounded-full border border-white/10 h-fit mt-1.5 md:mt-0 uppercase">2025</span>
+                            </div>
+                            <p class="text-emerald-400 font-bold text-base mb-3">Adriel Partners (US)</p>
+                            <p class="text-slate-300 text-base leading-relaxed">
+                                Driving innovation and steering high-stakes projects to success for the US market. Focus on scaling design outputs and creative resource planning.
+                            </p>
+                        </div>
+
+                        <!-- Role 3 -->
+                        <div class="relative pl-10 border-l border-slate-700">
+                            <div class="absolute -left-[6px] top-0 w-3 h-3 rounded-full bg-slate-600 ring-4 ring-slate-800"></div>
+                            <div class="flex flex-col md:flex-row justify-between mb-3">
+                                <h4 class="text-xl font-black text-white">Executive Team Lead & Project Manager</h4>
+                                <span class="text-[10px] font-bold text-slate-400 tracking-widest bg-white/5 px-3 py-1 rounded-full border border-white/10 h-fit mt-1.5 md:mt-0 uppercase">2022 — 2024</span>
+                            </div>
+                            <p class="text-slate-400 font-bold text-base mb-3">Plotano Agency (Thailand)</p>
+                            <p class="text-slate-300 text-base leading-relaxed">
+                                Managed workflows for <span class="text-white font-medium">100+ web projects</span>, focusing on project timelines and client satisfaction through strategic planning.
+                            </p>
+                        </div>
+
+                        <!-- New Freelance Role -->
+                        <div class="relative pl-10 border-l border-purple-500/30">
+                            <div class="absolute -left-[6px] top-0 w-3 h-3 rounded-full bg-purple-500 ring-4 ring-purple-500/20 shadow-[0_0_12px_rgba(168,85,247,0.4)]"></div>
+                            <div class="flex flex-col md:flex-row justify-between mb-3">
+                                <h4 class="text-xl font-black text-white">Senior Freelance Creative & AI Specialist</h4>
+                                <span class="text-[10px] font-bold text-slate-400 tracking-widest bg-white/5 px-3 py-1 rounded-full border border-white/10 h-fit mt-1.5 md:mt-0 uppercase">2021 — PRESENT</span>
+                            </div>
+                            <p class="text-purple-400 font-bold text-base mb-3">Independent Contractor</p>
+                            <p class="text-slate-300 text-base leading-relaxed">
+                                Executed a portfolio of <span class="text-white font-medium">high-end AI and Creative Web projects</span>. Collaborating as a solo architect and as a lead specialist to deliver conversion-driven design systems.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- 2. CORE MANAGEMENT VALUE-ADD -->
+                <section class="space-y-6">
+                    <h3 class="sidebar-section-title">
+                        <i data-lucide="zap" class="w-3.5 h-3.5 text-yellow-400"></i> CORE MANAGEMENT VALUE-ADD
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="value-card">
+                            <div class="p-2.5 bg-blue-500/10 rounded-xl w-fit mb-4">
+                                <i data-lucide="settings" class="w-5 h-5 text-blue-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">Automated Lead Engines</h4>
+                            <p class="text-slate-300 text-sm">Built <span class="text-white">fully automated Lead Machining systems</span> for MSN Global using n8n and AI, replacing manual CRM workflows.</p>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="p-2.5 bg-emerald-500/10 rounded-xl w-fit mb-4">
+                                <i data-lucide="cpu" class="w-5 h-5 text-emerald-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">20+ Custom AI Tools</h4>
+                            <p class="text-slate-300 text-sm">Engineered and deployed <span class="text-white">20+ Internal AI Tools</span> for companies to personalize customer interactions.</p>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="p-2.5 bg-orange-500/10 rounded-xl w-fit mb-4">
+                                <i data-lucide="layers" class="w-5 h-5 text-orange-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">100+ Projects Delivered</h4>
+                            <p class="text-slate-300 text-sm">Directed execution of <span class="text-white">100+ UI/UX and Web projects</span>, maintaining high quality-control standards.</p>
+                        </div>
+
+                        <div class="value-card">
+                            <div class="p-2.5 bg-purple-500/10 rounded-xl w-fit mb-4">
+                                <i data-lucide="pen-tool" class="w-5 h-5 text-purple-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">UI/UX Strategy Architect</h4>
+                            <p class="text-slate-300 text-sm">Designing conversion-focused interfaces by aligning psychology with technical feasibility for <span class="text-white">scalable design systems</span>.</p>
+                        </div>
+
+                                                <!-- New Card: Team Mentorship -->
+                        <div class="value-card">
+                            <div class="p-2.5 bg-pink-500/10 rounded-xl w-fit mb-4">
+                                <i data-lucide="users" class="w-5 h-5 text-pink-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">Team Mentorship</h4>
+                            <p class="text-slate-300 text-sm">Proven track record of <span class="text-white">training in-house teams</span> on AI workflows, design principles, and modern video production standards.</p>
+                        </div>
+
+                        <!-- New Card: Workflow Optimization -->
+                        <div class="value-card">
+                            <div class="p-2.5 bg-yellow-500/10 rounded-xl w-fit mb-4">
+                                <i data-lucide="activity" class="w-5 h-5 text-yellow-400"></i>
+                            </div>
+                            <h4 class="text-lg font-bold text-white mb-2">Workflow Optimization</h4>
+                            <p class="text-slate-300 text-sm">Implementing <span class="text-white">Agile methodologies</span> to slash production timelines and ensure rapid, error-free project delivery.</p>
+                        </div>
+
+
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <footer class="text-center py-10 border-t border-white/5 opacity-40">
+            <p class="text-[10px] font-black tracking-[0.4em] uppercase text-slate-500">
+                Abdulrahman Toor // Technical Creative Lead // 2026
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+        function copyText(text) {
+            const el = document.createElement('textarea');
+            el.value = text;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+            const toast = document.getElementById('toast');
+            toast.style.display = 'block';
+            setTimeout(() => { toast.style.display = 'none'; }, 2000);
+        }
+    </script>
+</body>
+</html>
